@@ -9,6 +9,7 @@ class Triangle
 
   def kind()
     if @sone <= 0 || @stwo <= 0 || @sthree <= 0
+      begin
         raise TriangleError
       rescue TriangleError => error
           puts error.message
