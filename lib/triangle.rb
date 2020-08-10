@@ -15,7 +15,7 @@ class Triangle
           puts error.message
       end
 
-    
+
     if @sone == @stwo && @sone == @sthree && @stwo == @sthree
       :equilateral
     elsif @sone == @stwo || @sone == @sthree || @stwo == @sthree
@@ -25,7 +25,7 @@ class Triangle
   end
   end
 
-  def 
+  def
 
   class TriangleError < StandardError
     def message
