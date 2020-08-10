@@ -17,6 +17,7 @@ class Triangle
     elsif @sone != @stwo && @sone != @sthree && @stwo != @sthree
       :scalene
   end
+  end
 
 
 
