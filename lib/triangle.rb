@@ -8,6 +8,14 @@ class Triangle
   end
 
   def kind()
+    if @sone =< 0 || @stwo =< 0 || @sthree =< 0
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
+
+    
     if @sone == @stwo && @sone == @sthree && @stwo == @sthree
       :equilateral
     elsif @sone == @stwo || @sone == @sthree || @stwo == @sthree
@@ -17,7 +25,11 @@ class Triangle
   end
   end
 
-  class TriangleError < StandardError
+  def 
 
+  class TriangleError < StandardError
+    def message
+      "There is a side too small!"
+    end
   end
 end
