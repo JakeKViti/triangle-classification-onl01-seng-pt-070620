@@ -12,6 +12,10 @@ class Triangle
         raise TriangleError
     end
 
+    if @sone <= 0 || @stwo <= 0 || @sthree <= 0
+        raise TriangleError
+    end
+
     if @sone == @stwo && @sone == @sthree && @stwo == @sthree
       :equilateral
     elsif @sone == @stwo || @sone == @sthree || @stwo == @sthree
