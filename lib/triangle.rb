@@ -10,9 +10,7 @@ class Triangle
   def kind()
     if @sone <= 0 || @stwo <= 0 || @sthree <= 0
         raise TriangleError
-      end
-
-     end
+    end
 
     if @sone == @stwo && @sone == @sthree && @stwo == @sthree
       :equilateral
