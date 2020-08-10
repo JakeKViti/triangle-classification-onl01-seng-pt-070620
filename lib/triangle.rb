@@ -28,7 +28,7 @@ class Triangle
 
 
 
-  class PartnerError  < StandardError
+  class PartnerError < StandardError
     def message
       "There is a side too small!"
     end
