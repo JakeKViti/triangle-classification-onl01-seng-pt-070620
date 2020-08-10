@@ -7,7 +7,7 @@ class Triangle
   @sthree = sthree
   end
 
-  def self.kind
+  def kind()
     if @sone == @stwo && @sone == @sthree && @stwo == @sthree
       :equilateral
     elsif @sone == @stwo || @sone == @sthree || @stwo == @sthree
