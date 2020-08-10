@@ -15,8 +15,9 @@ class Triangle
     elsif @sone != @stwo && @sone != @sthree && @stwo != @sthree
       :scalene
   end
+  end
 
-  #class TriangleError < StandardError
+  class TriangleError < StandardError
 
-  #end
+  end
 end
