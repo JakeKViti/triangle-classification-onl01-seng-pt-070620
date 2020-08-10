@@ -9,10 +9,12 @@ class Triangle
 
   def kind()
     if @sone <= 0 || @stwo <= 0 || @sthree <= 0
-    # begin
-    #   raise TriangleError
-     #rescue TriangleError => error
-      # puts error.message
+      begin
+          raise PartnerError
+        rescue PartnerError => error
+            puts error.message
+        end
+
      end
 
     if @sone == @stwo && @sone == @sthree && @stwo == @sthree
@@ -26,7 +28,7 @@ class Triangle
 
 
 
-  class TriangleError < StandardError
+  class PartnerError  < StandardError
     def message
       "There is a side too small!"
     end
