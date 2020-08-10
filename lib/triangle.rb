@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind()
-  
+
 
     if @sone == @stwo && @sone == @sthree && @stwo == @sthree
       :equilateral
