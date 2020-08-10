@@ -9,11 +9,8 @@ class Triangle
 
   def kind()
     if @sone <= 0 || @stwo <= 0 || @sthree <= 0
-      begin
-          raise TriangleError
-        rescue TriangleError => error
-            puts error.message
-        end
+        raise TriangleError
+      end
 
      end
 
@@ -29,9 +26,6 @@ class Triangle
 
 
   class TriangleError < StandardError
-    def message
-      "Wee Woo Illegal Size!"
-    end
   end
 end
 
