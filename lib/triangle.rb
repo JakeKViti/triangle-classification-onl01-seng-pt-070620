@@ -12,7 +12,7 @@ class Triangle
         raise TriangleError
     end
 
-    if @sone + @stwo <= @sthree
+    if @sone + @stwo <= @sthree || @sone + @sthree <= @stwo || @sthree + @stwo <= @sone
         raise TriangleError
     end
 
