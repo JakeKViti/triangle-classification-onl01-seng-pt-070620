@@ -30,7 +30,7 @@ class Triangle
 
   class TriangleError < StandardError
     def message
-      "There is a side too small!"
+      "Wee Woo Illegal Size!"
     end
   end
 end
