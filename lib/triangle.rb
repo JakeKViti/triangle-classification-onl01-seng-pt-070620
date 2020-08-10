@@ -27,9 +27,11 @@ class Triangle
 
   def
 
-  class TriangleError < StandardError
-    def message
-      "There is a side too small!"
-    end
+
+end
+
+class TriangleError < StandardError
+  def message
+    "There is a side too small!"
   end
 end
