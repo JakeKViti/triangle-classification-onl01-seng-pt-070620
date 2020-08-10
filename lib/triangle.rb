@@ -7,6 +7,10 @@ class Triangle
   @sthree = sthree
   end
 
+  def self.kind
+
+  end
+
   class TriangleError < StandardError
 
   end
